@@ -40,7 +40,7 @@ canvas.height = innerHeight;
 // Variables
 let followersCount = null;
 
-/*addEventListener("resize", function() {
+addEventListener("resize", function() {
   canvas.width = innerWidth;
   canvas.height = innerHeight;
 
@@ -49,7 +49,7 @@ let followersCount = null;
 });
 
 // Utility Functions
-randomIntFromRange = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+/*randomIntFromRange = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
 randomColor = (colors) => colors[Math.floor(Math.random() * colors.length)];
 
