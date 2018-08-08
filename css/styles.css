@@ -115,6 +115,10 @@ body {
   border-radius: 5px;
 }
 
+.active {
+  display: inline-block !important;
+}
+
 /*#contact h1 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal;
@@ -268,10 +272,6 @@ canvas {
   z-index: 2;
   border-radius: 5px;
   z-index: 2;
-}
-
-.active {
-  display: inline-block !important;
 }
 
 #alert_container h1 {
