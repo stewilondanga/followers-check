@@ -78,6 +78,17 @@ body {
   font-size: .75rem;
 }
 
+.social_icon {
+  color: rgba(100, 100, 100, .3);
+  float: left;
+  background: #FFF;
+  height: 100%;
+}
+
+/*.social_icon span {
+  cursor: pointer;
+}
+
 /*#contact h1 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal;
@@ -203,17 +214,6 @@ body {
 .cal td {
   padding: 0 2px;
   line-height: 100%;
-}
-
-.social_icon {
-  color: rgba(100, 100, 100, .3);
-  float: left;
-  background: #FFF;
-  height: 100%;
-}
-
-.social_icon span {
-  cursor: pointer;
 }
 
 .social_twitter.active, #social_twitter.active {
