@@ -7,7 +7,7 @@ var navigate = (function() {
   });
 })();
 
-// CONSTANTS
+/*// CONSTANTS
 const GRAVITY = 0.3;
 const FRICTION = 0.5;
 const COLORS = ['#333', '#7ECEFD'];
@@ -263,3 +263,4 @@ animate = () => {
     follower.update();
   })
 }
+*/
