@@ -98,16 +98,16 @@ function Ball(x, y, dx, dy, radius, color) {
   this.radius = radius;
   this.color = color;
 
-  /*this.update = () => {
-    if (this.y + this.radius + this.dy > canvas.height) {
-      this.dy = -this.dy;
-      this.dy = this.dy * FRICTION;
-      this.dx = this.dx * FRICTION;
-    } else {
-      this.dy += GRAVITY;
-    }
+  this.update = () => {
+      if (this.y + this.radius + this.dy > canvas.height) {
+        this.dy = -this.dy;
+        this.dy = this.dy * FRICTION;
+        this.dx = this.dx * FRICTION;
+      } else {
+        this.dy += GRAVITY;
+      }
 
-    if (this.x + this.radius >= canvas.width || this.x - this.radius <= 0) {
+      /*if (this.x + this.radius >= canvas.width || this.x - this.radius <= 0) {
       this.dx = -this.dx * FRICTION;
     }
 
