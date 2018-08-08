@@ -74,11 +74,11 @@ toggleSocial = (network) => {
   }
 }
 
-/*toggleElement = (element) => {
+toggleElement = (element) => {
   document.getElementById(element).classList.toggle("active");
 }
 
-toggleLoader = () => {
+/*toggleLoader = () => {
   document.getElementById("loader").classList.toggle("active");
   document.getElementById("search_button").classList.toggle("active");
 }
