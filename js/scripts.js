@@ -83,14 +83,14 @@ toggleLoader = () => {
   document.getElementById("search_button").classList.toggle("active");
 }
 
-/*removeUserError = () => {
+removeUserError = () => {
   document.getElementById("error_message").classList.remove("active");
   document.getElementById("followers_total").classList.remove("active");
   document.getElementById("no_followers").classList.remove("active");
 }
 
 // Objects
-function Ball(x, y, dx, dy, radius, color) {
+/*function Ball(x, y, dx, dy, radius, color) {
   this.x = x;
   this.y = y;
   this.dx = dx;
