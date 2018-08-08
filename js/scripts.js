@@ -107,11 +107,11 @@ function Ball(x, y, dx, dy, radius, color) {
         this.dy += GRAVITY;
       }
 
-      /*if (this.x + this.radius >= canvas.width || this.x - this.radius <= 0) {
-      this.dx = -this.dx * FRICTION;
-    }
+      if (this.x + this.radius >= canvas.width || this.x - this.radius <= 0) {
+        this.dx = -this.dx * FRICTION;
+      }
 
-    this.x += this.dx;
+      /*this.x += this.dx;
     this.y += this.dy;
     this.draw();
   };
