@@ -51,9 +51,9 @@ addEventListener("resize", function() {
 // Utility Functions
 randomIntFromRange = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
-/*randomColor = (colors) => colors[Math.floor(Math.random() * colors.length)];
+randomColor = (colors) => colors[Math.floor(Math.random() * colors.length)];
 
-toggleSocial = (network) => {
+/*toggleSocial = (network) => {
   let currentValue = document.getElementById("user_input").value;
 
   if (network === "twitter") {
