@@ -165,12 +165,12 @@ document.getElementById("user_input").addEventListener("keyup", e => {
   }
 });
 
-/*document.getElementById("user_input").addEventListener("focus", () => {
+document.getElementById("user_input").addEventListener("focus", () => {
   if (document.getElementById("user_input").value === `@${MY_TWITTER_USER}` || document.getElementById("user_input").value === MY_CODEPEN_USER)
     document.getElementById("user_input").value = ""
 });
 
-document.getElementById("social_twitter").addEventListener("click", () => {
+/*document.getElementById("social_twitter").addEventListener("click", () => {
   social_network = "twitter";
   toggleSocial("twitter")
 });
