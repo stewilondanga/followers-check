@@ -151,10 +151,10 @@ obtainData = () => {
   }
 }
 
-/*document.getElementById("hide_alert").addEventListener("click", () => {
+document.getElementById("hide_alert").addEventListener("click", () => {
   toggleElement("alert_container")
 });
-document.getElementById("search_button").addEventListener("click", obtainData);
+/*document.getElementById("search_button").addEventListener("click", obtainData);
 document.getElementById("user_input").addEventListener("keyup", e => {
   let currentValue = document.getElementById("user_input").value;
   if (social_network === "twitter") {
