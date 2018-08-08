@@ -49,9 +49,9 @@ addEventListener("resize", function() {
 });
 
 // Utility Functions
-/*randomIntFromRange = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+randomIntFromRange = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
-randomColor = (colors) => colors[Math.floor(Math.random() * colors.length)];
+/*randomColor = (colors) => colors[Math.floor(Math.random() * colors.length)];
 
 toggleSocial = (network) => {
   let currentValue = document.getElementById("user_input").value;
