@@ -38,9 +38,9 @@ canvas.width = innerWidth;
 canvas.height = innerHeight;
 
 // Variables
-/*let followersCount = null;
+let followersCount = null;
 
-addEventListener("resize", function() {
+/*addEventListener("resize", function() {
   canvas.width = innerWidth;
   canvas.height = innerHeight;
 
