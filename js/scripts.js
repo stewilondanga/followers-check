@@ -60,12 +60,12 @@ toggleSocial = (network) => {
       document.getElementById(`social_${network}`).classList.add("active");
       document.getElementById(`social_codepen`).classList.remove("active");
 
-      /*if (currentValue[0] !== "@") {
-      currentValue = currentValue === MY_CODEPEN_USER ? MY_TWITTER_USER : currentValue;
-      document.getElementById("user_input").value = "@" + currentValue;
-    }
-  } else {
-    document.getElementById(`social_${network}`).classList.add("active");
+      if (currentValue[0] !== "@") {
+        currentValue = currentValue === MY_CODEPEN_USER ? MY_TWITTER_USER : currentValue;
+        document.getElementById("user_input").value = "@" + currentValue;
+      }
+    } else {
+      /*document.getElementById(`social_${network}`).classList.add("active");
     document.getElementById(`social_twitter`).classList.remove("active");
     if (network === "codepen" && currentValue[0] === "@") {
       currentValue = currentValue === `@${MY_TWITTER_USER}` ? MY_CODEPEN_USER : currentValue;
