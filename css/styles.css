@@ -67,7 +67,7 @@ body {
   box-shadow: 0 1px 0 1px rgba(70, 70, 70, 0.2);
 }
 
-/*.user_container input {
+.user_container input {
   width: 120px;
   border: none;
   padding: 5px 0;
