@@ -179,7 +179,7 @@ document.getElementById("social_codepen").addEventListener("click", () => {
   toggleSocial("codepen")
 });
 
-/*checkMaxFollowers = (value) => {
+checkMaxFollowers = (value) => {
   if (value > MAX_FOLLOWERS) {
     followersCount = MAX_FOLLOWERS;
     document.getElementById("followers_count").innerText = value;
@@ -187,7 +187,7 @@ document.getElementById("social_codepen").addEventListener("click", () => {
   }
 }
 
-getCodepenFollowers = () => {
+/*getCodepenFollowers = () => {
   let username = document.getElementById("user_input").value;
   username = username[0] === "@" ? username.replace("@", "") : username;
 
