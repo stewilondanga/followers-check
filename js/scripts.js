@@ -140,9 +140,9 @@ obtainData = () => {
         network: social_network
       };
 
-      /*toggleLoader();
+      toggleLoader();
 
-    if (social_network === "codepen")
+    /*if (social_network === "codepen")
       getCodepenFollowers();
     else
       getTwitterFollowers();
