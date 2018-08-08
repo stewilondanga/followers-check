@@ -53,10 +53,10 @@ randomIntFromRange = (min, max) => Math.floor(Math.random() * (max - min + 1) + 
 
 randomColor = (colors) => colors[Math.floor(Math.random() * colors.length)];
 
-/*toggleSocial = (network) => {
-  let currentValue = document.getElementById("user_input").value;
+toggleSocial = (network) => {
+    let currentValue = document.getElementById("user_input").value;
 
-  if (network === "twitter") {
+    /*if (network === "twitter") {
     document.getElementById(`social_${network}`).classList.add("active");
     document.getElementById(`social_codepen`).classList.remove("active");
 
