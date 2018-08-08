@@ -172,19 +172,19 @@ canvas {
   }
 }
 
-/*#contact h1 {
+#contact h1 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal;
   text-align: center;
   color: #c0c0c0;
-  padding-top: 50px;
+  padding-top: 170px;
   padding-bottom: 10px;
   width: 375px;
   margin: 0 auto;
   border-bottom: 3px solid #f3f3f3;
 }
 
-.containers {
+/*.containers {
   width: 520px;
   margin: 20px auto;
 }
