@@ -222,9 +222,9 @@ getTwitterFollowers = () => {
 }
 
 
-/*var followersArray = [];
+var followersArray = [];
 
-init = () => {
+/*init = () => {
   removeUserError();
   followersArray = [];
   document.getElementById("no_followers").classList.remove("active");
