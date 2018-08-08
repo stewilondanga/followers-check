@@ -184,12 +184,12 @@ canvas {
   border-bottom: 3px solid #f3f3f3;
 }
 
-/*.containers {
+.containers {
   width: 520px;
   margin: 20px auto;
 }
 
-.menu_btn {
+/*.menu_btn {
   font-family: helvetica;
   width: 125px;
   float: left;
