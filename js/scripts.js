@@ -224,12 +224,12 @@ getTwitterFollowers = () => {
 
 var followersArray = [];
 
-/*init = () => {
-  removeUserError();
-  followersArray = [];
-  document.getElementById("no_followers").classList.remove("active");
+init = () => {
+    removeUserError();
+    followersArray = [];
+    document.getElementById("no_followers").classList.remove("active");
 
-  if (followersCount < MAX_FOLLOWERS && followersCount > 1) {
+    /*if (followersCount < MAX_FOLLOWERS && followersCount > 1) {
     document.getElementById("followers_amount").innerText = followersCount;
     document.getElementById("followers_total").classList.add("active");
   } else if (followersCount == 0) {
