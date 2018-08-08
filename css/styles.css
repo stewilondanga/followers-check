@@ -158,6 +158,11 @@ body {
   text-shadow: -1px 1px 1px #ededed;
 }
 
+canvas {
+  position: relative;
+  z-index: 0;
+}
+
 /*#contact h1 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal;
@@ -284,12 +289,6 @@ body {
   padding: 0 2px;
   line-height: 100%;
 }
-
-canvas {
-  position: relative;
-  z-index: 0;
-}
-
 
 @keyframes spin {
   0% {
