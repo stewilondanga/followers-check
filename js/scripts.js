@@ -18,14 +18,14 @@ const MY_TWITTER_USER = "rominamartinlib";
 const MY_CODEPEN_USER = "rominamartin";
 
 // Data
-/*const CODEPEN_BASE_URL = "https://cpv2api.com/profile/";
+const CODEPEN_BASE_URL = "https://cpv2api.com/profile/";
 const TWITTER_BASE_URL = "https://cors-anywhere.herokuapp.com/https://cdn.syndication.twimg.com/widgets/followbutton/info.json?screen_names=";
 
 
 // I made this based on this cool tutorial, check it out!
 // https://www.youtube.com/watch?v=3b7FyIxWW94
 
-const canvas = document.querySelector('canvas');
+/*const canvas = document.querySelector('canvas');
 const c = canvas.getContext('2d');
 let initialized = false;
 let social_network = "twitter";
