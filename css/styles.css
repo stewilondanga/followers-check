@@ -97,6 +97,13 @@ body {
   color: rgba(0, 0, 0, 1);
 }
 
+#error_message {
+  margin-top: 10px;
+  display: none;
+  color: #ca1c24;
+  font-weight: bolder;
+}
+
 /*#contact h1 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal;
@@ -241,13 +248,6 @@ body {
 
 .button:hover {
   background: #EDEDED;
-}
-
-#error_message {
-  margin-top: 10px;
-  display: none;
-  color: #ca1c24;
-  font-weight: bolder;
 }
 
 canvas {
