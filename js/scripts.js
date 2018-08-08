@@ -116,7 +116,7 @@ function Ball(x, y, dx, dy, radius, color) {
     this.draw();
   };
 
-  /*this.draw = () => {
+  this.draw = () => {
     c.beginPath();
     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
     c.fillStyle = this.color;
@@ -126,7 +126,7 @@ function Ball(x, y, dx, dy, radius, color) {
   };
 }
 
-obtainData = () => {
+/*obtainData = () => {
   let currentValue = document.getElementById("user_input").value;
 
   if (currentValue.length < 2) {
