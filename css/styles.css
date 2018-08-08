@@ -119,6 +119,10 @@ body {
   display: inline-block !important;
 }
 
+#search_button {
+  display: none;
+}
+
 /*#contact h1 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal;
@@ -244,10 +248,6 @@ body {
 .cal td {
   padding: 0 2px;
   line-height: 100%;
-}
-
-#search_button {
-  display: none;
 }
 
 .button:hover {
