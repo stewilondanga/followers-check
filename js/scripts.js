@@ -25,7 +25,7 @@ const TWITTER_BASE_URL = "https://cors-anywhere.herokuapp.com/https://cdn.syndic
 // I made this based on this cool tutorial, check it out!
 // https://www.youtube.com/watch?v=3b7FyIxWW94
 
-/*const canvas = document.querySelector('canvas');
+const canvas = document.querySelector('canvas');
 const c = canvas.getContext('2d');
 let initialized = false;
 let social_network = "twitter";
@@ -34,7 +34,7 @@ let lastSearch = {
   user: null
 };
 
-canvas.width = innerWidth;
+/*canvas.width = innerWidth;
 canvas.height = innerHeight;
 
 // Variables
