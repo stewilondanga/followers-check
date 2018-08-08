@@ -123,6 +123,17 @@ body {
   display: none;
 }
 
+#loader {
+  display: none;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  border-top: 5px solid #86868D;
+  width: 25px;
+  height: 25px;
+  animation: spin 1.5s linear infinite;
+  margin-top: 40px;
+}
+
 /*#contact h1 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal;
@@ -277,17 +288,6 @@ canvas {
 #alert_container h1 {
   color: #FFAFC5;
   text-shadow: -1px 1px 1px #ededed;
-}
-
-#loader {
-  display: none;
-  border: 5px solid #fff;
-  border-radius: 50%;
-  border-top: 5px solid #86868D;
-  width: 25px;
-  height: 25px;
-  animation: spin 1.5s linear infinite;
-  margin-top: 40px;
 }
 
 @keyframes spin {
