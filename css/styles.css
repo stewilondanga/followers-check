@@ -138,7 +138,7 @@ body {
   margin-top: 40px;
 }
 
-/*#alert_container {
+#alert_container {
   display: none;
   position: absolute;
   left: 40%;
@@ -153,7 +153,7 @@ body {
   z-index: 2;
 }
 
-#alert_container h1 {
+/*#alert_container h1 {
   color: #FFAFC5;
   text-shadow: -1px 1px 1px #ededed;
 }
