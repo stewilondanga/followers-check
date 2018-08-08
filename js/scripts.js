@@ -188,79 +188,79 @@ checkMaxFollowers = (value) => {
 }
 
 getCodepenFollowers = () => {
-    let username = document.getElementById("user_input").value;
-    username = username[0] === "@" ? username.replace("@", "") : username;
+  let username = document.getElementById("user_input").value;
+  username = username[0] === "@" ? username.replace("@", "") : username;
 
-    /*  fetch(`${CODEPEN_BASE_URL}${username}`)
-        .then(data => data.json())
-        .then(res => {
-          followersCount = Number(res.data.followers.replace(",", ""));
-          checkMaxFollowers(followersCount);
-          toggleLoader();
-          init();
-        }).catch(err => {
-          toggleElement("error_message");
-          toggleLoader();
-        });
-    }
+  fetch(`${CODEPEN_BASE_URL}${username}`)
+    .then(data => data.json())
+    .then(res => {
+      followersCount = Number(res.data.followers.replace(",", ""));
+      checkMaxFollowers(followersCount);
+      toggleLoader();
+      init();
+    }).catch(err => {
+      toggleElement("error_message");
+      toggleLoader();
+    });
+}
 
-    getTwitterFollowers = () => {
-      let username = document.getElementById("user_input").value;
-      username = username[0] === "@" ? username.replace("@", "") : username;
+/*getTwitterFollowers = () => {
+  let username = document.getElementById("user_input").value;
+  username = username[0] === "@" ? username.replace("@", "") : username;
 
-      fetch(`${TWITTER_BASE_URL}${username}`)
-        .then(data => data.json())
-        .then(res => {
-          followersCount = Number(res[0].followers_count);
-          checkMaxFollowers(followersCount);
-          toggleLoader();
-          init();
-        }).catch(err => {
-          toggleLoader();
-          toggleElement("error_message");
-        });
-    }
+  fetch(`${TWITTER_BASE_URL}${username}`)
+    .then(data => data.json())
+    .then(res => {
+      followersCount = Number(res[0].followers_count);
+      checkMaxFollowers(followersCount);
+      toggleLoader();
+      init();
+    }).catch(err => {
+      toggleLoader();
+      toggleElement("error_message");
+    });
+}
 
 
-    var followersArray = [];
+var followersArray = [];
 
-    init = () => {
-      removeUserError();
-      followersArray = [];
-      document.getElementById("no_followers").classList.remove("active");
+init = () => {
+  removeUserError();
+  followersArray = [];
+  document.getElementById("no_followers").classList.remove("active");
 
-      if (followersCount < MAX_FOLLOWERS && followersCount > 1) {
-        document.getElementById("followers_amount").innerText = followersCount;
-        document.getElementById("followers_total").classList.add("active");
-      } else if (followersCount == 0) {
-        document.getElementById("no_followers").classList.add("active");
-      } else {
-        document.getElementById("followers_total").classList.remove("active");
-        document.getElementById("no_followers").classList.remove("active");
-      }
+  if (followersCount < MAX_FOLLOWERS && followersCount > 1) {
+    document.getElementById("followers_amount").innerText = followersCount;
+    document.getElementById("followers_total").classList.add("active");
+  } else if (followersCount == 0) {
+    document.getElementById("no_followers").classList.add("active");
+  } else {
+    document.getElementById("followers_total").classList.remove("active");
+    document.getElementById("no_followers").classList.remove("active");
+  }
 
-      for (let i = 0; i < followersCount; i++) {
-        var x = randomIntFromRange(radius, canvas.width - radius);
-        var y = randomIntFromRange(0, canvas.height - radius);
-        var dx = randomIntFromRange(-3, 3);
-        var dy = randomIntFromRange(-2, 2);
-        var radius = randomIntFromRange(10, 20);
+  for (let i = 0; i < followersCount; i++) {
+    var x = randomIntFromRange(radius, canvas.width - radius);
+    var y = randomIntFromRange(0, canvas.height - radius);
+    var dx = randomIntFromRange(-3, 3);
+    var dy = randomIntFromRange(-2, 2);
+    var radius = randomIntFromRange(10, 20);
 
-        followersArray.push(new Ball(x, y, dx, dy, radius, randomColor(COLORS)));
-      }
-      if (!initialized)
-        animate();
-    }
+    followersArray.push(new Ball(x, y, dx, dy, radius, randomColor(COLORS)));
+  }
+  if (!initialized)
+    animate();
+}
 
-    // Animation Loop
-    animate = () => {
-      initialized = true;
-      requestAnimationFrame(animate);
+// Animation Loop
+animate = () => {
+  initialized = true;
+  requestAnimationFrame(animate);
 
-      c.clearRect(0, 0, canvas.width, canvas.height);
+  c.clearRect(0, 0, canvas.width, canvas.height);
 
-      followersArray.forEach(follower => {
-        follower.update();
-      })
-    }
-    */
+  followersArray.forEach(follower => {
+    follower.update();
+  })
+}
+*/
