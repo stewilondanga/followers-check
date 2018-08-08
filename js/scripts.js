@@ -90,7 +90,7 @@ removeUserError = () => {
 }
 
 // Objects
-/*function Ball(x, y, dx, dy, radius, color) {
+function Ball(x, y, dx, dy, radius, color) {
   this.x = x;
   this.y = y;
   this.dx = dx;
@@ -98,7 +98,7 @@ removeUserError = () => {
   this.radius = radius;
   this.color = color;
 
-  this.update = () => {
+  /*this.update = () => {
     if (this.y + this.radius + this.dy > canvas.height) {
       this.dy = -this.dy;
       this.dy = this.dy * FRICTION;
