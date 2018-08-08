@@ -127,22 +127,22 @@ function Ball(x, y, dx, dy, radius, color) {
 }
 
 obtainData = () => {
-    let currentValue = document.getElementById("user_input").value;
+  let currentValue = document.getElementById("user_input").value;
 
-    if (currentValue.length < 2) {
-      document.getElementById("user_input").value = social_network === "twitter" ? `@${MY_TWITTER_USER}` : MY_CODEPEN_USER;
-      currentValue = document.getElementById("user_input").value;
-    }
+  if (currentValue.length < 2) {
+    document.getElementById("user_input").value = social_network === "twitter" ? `@${MY_TWITTER_USER}` : MY_CODEPEN_USER;
+    currentValue = document.getElementById("user_input").value;
+  }
 
-    if (currentValue !== lastSearch.user || social_network !== lastSearch.network) {
-      lastSearch = {
-        user: currentValue,
-        network: social_network
-      };
+  if (currentValue !== lastSearch.user || social_network !== lastSearch.network) {
+    lastSearch = {
+      user: currentValue,
+      network: social_network
+    };
 
-      toggleLoader();
+    toggleLoader();
 
-    /*if (social_network === "codepen")
+    if (social_network === "codepen")
       getCodepenFollowers();
     else
       getTwitterFollowers();
@@ -151,7 +151,7 @@ obtainData = () => {
   }
 }
 
-document.getElementById("hide_alert").addEventListener("click", () => {
+/*document.getElementById("hide_alert").addEventListener("click", () => {
   toggleElement("alert_container")
 });
 document.getElementById("search_button").addEventListener("click", obtainData);
