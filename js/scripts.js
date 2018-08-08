@@ -126,10 +126,10 @@ function Ball(x, y, dx, dy, radius, color) {
   };
 }
 
-/*obtainData = () => {
-  let currentValue = document.getElementById("user_input").value;
+obtainData = () => {
+    let currentValue = document.getElementById("user_input").value;
 
-  if (currentValue.length < 2) {
+    /*if (currentValue.length < 2) {
     document.getElementById("user_input").value = social_network === "twitter" ? `@${MY_TWITTER_USER}` : MY_CODEPEN_USER;
     currentValue = document.getElementById("user_input").value;
   }
