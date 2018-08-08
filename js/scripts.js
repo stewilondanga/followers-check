@@ -134,13 +134,13 @@ obtainData = () => {
       currentValue = document.getElementById("user_input").value;
     }
 
-    /*if (currentValue !== lastSearch.user || social_network !== lastSearch.network) {
-    lastSearch = {
-      user: currentValue,
-      network: social_network
-    };
+    if (currentValue !== lastSearch.user || social_network !== lastSearch.network) {
+      lastSearch = {
+        user: currentValue,
+        network: social_network
+      };
 
-    toggleLoader();
+      /*toggleLoader();
 
     if (social_network === "codepen")
       getCodepenFollowers();
