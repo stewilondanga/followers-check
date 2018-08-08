@@ -29,8 +29,13 @@ body {
   font-weight: bold;
 }
 
-
-/*.followers_amount { display: none; position: absolute; top: 50px; left: 25px; color: rgba(70,70,70,.8)}
+.followers_amount {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  color: rgba(70,70,70,.8)
+}
 
 /*    h1 {
     	font-family: helvetica;
