@@ -21,6 +21,17 @@ body {
   height: 1.5em;
 }
 
+.followers_amount {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  color: #C9F0FF;
+  font-weight: bold;
+}
+
+
+/*.followers_amount { display: none; position: absolute; top: 50px; left: 25px; color: rgba(70,70,70,.8)}
+
 /*    h1 {
     	font-family: helvetica;
     	font-weight: normal;
@@ -230,17 +241,6 @@ canvas {
   color: #FFAFC5;
   text-shadow: -1px 1px 1px #ededed;
 }
-
-.followers_amount {
-  display: block;
-  width: 100%;
-  margin-top: 25px;
-  color: #C9F0FF;
-  font-weight: bold;
-}
-
-
-.followers_amount { display: none; position: absolute; top: 50px; left: 25px; color: rgba(70,70,70,.8)}
 
 #loader {
   display: none;
