@@ -246,9 +246,9 @@ init = () => {
       var dy = randomIntFromRange(-2, 2);
       var radius = randomIntFromRange(10, 20);
 
-      /*followersArray.push(new Ball(x, y, dx, dy, radius, randomColor(COLORS)));
-  }
-  if (!initialized)
+      followersArray.push(new Ball(x, y, dx, dy, radius, randomColor(COLORS)));
+    }
+    /*if (!initialized)
     animate();
 }
 
