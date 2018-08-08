@@ -34,11 +34,11 @@ let lastSearch = {
   user: null
 };
 
-/*canvas.width = innerWidth;
+canvas.width = innerWidth;
 canvas.height = innerHeight;
 
 // Variables
-let followersCount = null;
+/*let followersCount = null;
 
 addEventListener("resize", function() {
   canvas.width = innerWidth;
