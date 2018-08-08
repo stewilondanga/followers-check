@@ -253,7 +253,7 @@ init = () => {
 }
 
 // Animation Loop
-/*animate = () => {
+animate = () => {
   initialized = true;
   requestAnimationFrame(animate);
 
@@ -263,4 +263,3 @@ init = () => {
     follower.update();
   })
 }
-*/
