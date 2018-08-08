@@ -225,35 +225,35 @@ getTwitterFollowers = () => {
 var followersArray = [];
 
 init = () => {
-    removeUserError();
-    followersArray = [];
+  removeUserError();
+  followersArray = [];
+  document.getElementById("no_followers").classList.remove("active");
+
+  if (followersCount < MAX_FOLLOWERS && followersCount > 1) {
+    document.getElementById("followers_amount").innerText = followersCount;
+    document.getElementById("followers_total").classList.add("active");
+  } else if (followersCount == 0) {
+    document.getElementById("no_followers").classList.add("active");
+  } else {
+    document.getElementById("followers_total").classList.remove("active");
     document.getElementById("no_followers").classList.remove("active");
+  }
 
-    if (followersCount < MAX_FOLLOWERS && followersCount > 1) {
-      document.getElementById("followers_amount").innerText = followersCount;
-      document.getElementById("followers_total").classList.add("active");
-    } else if (followersCount == 0) {
-      document.getElementById("no_followers").classList.add("active");
-    } else {
-      document.getElementById("followers_total").classList.remove("active");
-      document.getElementById("no_followers").classList.remove("active");
-    }
+  for (let i = 0; i < followersCount; i++) {
+    var x = randomIntFromRange(radius, canvas.width - radius);
+    var y = randomIntFromRange(0, canvas.height - radius);
+    var dx = randomIntFromRange(-3, 3);
+    var dy = randomIntFromRange(-2, 2);
+    var radius = randomIntFromRange(10, 20);
 
-    for (let i = 0; i < followersCount; i++) {
-      var x = randomIntFromRange(radius, canvas.width - radius);
-      var y = randomIntFromRange(0, canvas.height - radius);
-      var dx = randomIntFromRange(-3, 3);
-      var dy = randomIntFromRange(-2, 2);
-      var radius = randomIntFromRange(10, 20);
-
-      followersArray.push(new Ball(x, y, dx, dy, radius, randomColor(COLORS)));
-    }
-    /*if (!initialized)
+    followersArray.push(new Ball(x, y, dx, dy, radius, randomColor(COLORS)));
+  }
+  if (!initialized)
     animate();
 }
 
 // Animation Loop
-animate = () => {
+/*animate = () => {
   initialized = true;
   requestAnimationFrame(animate);
 
