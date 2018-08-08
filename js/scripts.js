@@ -78,12 +78,12 @@ toggleElement = (element) => {
   document.getElementById(element).classList.toggle("active");
 }
 
-/*toggleLoader = () => {
+toggleLoader = () => {
   document.getElementById("loader").classList.toggle("active");
   document.getElementById("search_button").classList.toggle("active");
 }
 
-removeUserError = () => {
+/*removeUserError = () => {
   document.getElementById("error_message").classList.remove("active");
   document.getElementById("followers_total").classList.remove("active");
   document.getElementById("no_followers").classList.remove("active");
