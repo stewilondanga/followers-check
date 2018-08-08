@@ -104,6 +104,17 @@ body {
   font-weight: bolder;
 }
 
+.button {
+  padding: 10px 20px;
+  margin-top: 40px;
+  background-color: #FFF;
+  border: none;
+  color: #86868D;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 /*#contact h1 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal;
@@ -229,17 +240,6 @@ body {
 .cal td {
   padding: 0 2px;
   line-height: 100%;
-}
-
-.button {
-  padding: 10px 20px;
-  margin-top: 40px;
-  background-color: #FFF;
-  border: none;
-  color: #86868D;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 5px;
 }
 
 #search_button {
