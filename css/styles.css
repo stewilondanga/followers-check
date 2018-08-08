@@ -89,6 +89,10 @@ body {
   cursor: pointer;
 }
 
+.social_twitter.active, #social_twitter.active {
+  color: #00ACED;
+}
+
 /*#contact h1 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal;
@@ -214,10 +218,6 @@ body {
 .cal td {
   padding: 0 2px;
   line-height: 100%;
-}
-
-.social_twitter.active, #social_twitter.active {
-  color: #00ACED;
 }
 
 .social_codepen.active, #social_codepen.active {
