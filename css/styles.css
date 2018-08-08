@@ -57,7 +57,28 @@ body {
   line-height: 60px;
 }
 
-#contact h1 {
+.user_container {
+  width: 180px;
+  background: #FFF;
+  height: 20px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  margin-left: 35px;
+  box-shadow: 0 1px 0 1px rgba(70, 70, 70, 0.2);
+}
+
+/*.user_container input {
+  width: 120px;
+  border: none;
+  padding: 5px 0;
+  text-align: center;
+  color: #5c4b51;
+  float: left;
+  outline: none;
+  font-size: .75rem;
+}
+
+/*#contact h1 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal;
   text-align: center;
@@ -69,7 +90,7 @@ body {
   border-bottom: 3px solid #f3f3f3;
 }
 
-/*.containers {
+.containers {
   width: 520px;
   margin: 20px auto;
 }
@@ -182,27 +203,6 @@ body {
 .cal td {
   padding: 0 2px;
   line-height: 100%;
-}
-
-.user_container {
-  width: 180px;
-  background: #FFF;
-  height: 20px;
-  padding: 10px 5px;
-  border-radius: 5px;
-  margin-left: 35px;
-  box-shadow: 0 1px 0 1px rgba(70, 70, 70, 0.2);
-}
-
-.user_container input {
-  width: 120px;
-  border: none;
-  padding: 5px 0;
-  text-align: center;
-  color: #5c4b51;
-  float: left;
-  outline: none;
-  font-size: .75rem;
 }
 
 .social_icon {
