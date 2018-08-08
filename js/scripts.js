@@ -99,24 +99,24 @@ function Ball(x, y, dx, dy, radius, color) {
   this.color = color;
 
   this.update = () => {
-      if (this.y + this.radius + this.dy > canvas.height) {
-        this.dy = -this.dy;
-        this.dy = this.dy * FRICTION;
-        this.dx = this.dx * FRICTION;
-      } else {
-        this.dy += GRAVITY;
-      }
+    if (this.y + this.radius + this.dy > canvas.height) {
+      this.dy = -this.dy;
+      this.dy = this.dy * FRICTION;
+      this.dx = this.dx * FRICTION;
+    } else {
+      this.dy += GRAVITY;
+    }
 
-      if (this.x + this.radius >= canvas.width || this.x - this.radius <= 0) {
-        this.dx = -this.dx * FRICTION;
-      }
+    if (this.x + this.radius >= canvas.width || this.x - this.radius <= 0) {
+      this.dx = -this.dx * FRICTION;
+    }
 
-      /*this.x += this.dx;
+    this.x += this.dx;
     this.y += this.dy;
     this.draw();
   };
 
-  this.draw = () => {
+  /*this.draw = () => {
     c.beginPath();
     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
     c.fillStyle = this.color;
