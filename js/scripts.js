@@ -14,8 +14,8 @@ const COLORS = ['#333', '#7ECEFD'];
 
 const MAX_FOLLOWERS = 1500;
 
-const MY_TWITTER_USER = "rominamartinlib";
-const MY_CODEPEN_USER = "rominamartin";
+const MY_TWITTER_USER = "stew_ilondanga";
+const MY_CODEPEN_USER = "stew_ilondanga";
 
 // Data
 const CODEPEN_BASE_URL = "https://cpv2api.com/profile/";
