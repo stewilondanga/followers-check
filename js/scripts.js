@@ -229,17 +229,17 @@ init = () => {
     followersArray = [];
     document.getElementById("no_followers").classList.remove("active");
 
-    /*if (followersCount < MAX_FOLLOWERS && followersCount > 1) {
-    document.getElementById("followers_amount").innerText = followersCount;
-    document.getElementById("followers_total").classList.add("active");
-  } else if (followersCount == 0) {
-    document.getElementById("no_followers").classList.add("active");
-  } else {
-    document.getElementById("followers_total").classList.remove("active");
-    document.getElementById("no_followers").classList.remove("active");
-  }
+    if (followersCount < MAX_FOLLOWERS && followersCount > 1) {
+      document.getElementById("followers_amount").innerText = followersCount;
+      document.getElementById("followers_total").classList.add("active");
+    } else if (followersCount == 0) {
+      document.getElementById("no_followers").classList.add("active");
+    } else {
+      document.getElementById("followers_total").classList.remove("active");
+      document.getElementById("no_followers").classList.remove("active");
+    }
 
-  for (let i = 0; i < followersCount; i++) {
+    /*for (let i = 0; i < followersCount; i++) {
     var x = randomIntFromRange(radius, canvas.width - radius);
     var y = randomIntFromRange(0, canvas.height - radius);
     var dx = randomIntFromRange(-3, 3);
