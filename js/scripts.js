@@ -205,10 +205,10 @@ getCodepenFollowers = () => {
 }
 
 getTwitterFollowers = () => {
-    let username = document.getElementById("user_input").value;
-    username = username[0] === "@" ? username.replace("@", "") : username;
+  let username = document.getElementById("user_input").value;
+  username = username[0] === "@" ? username.replace("@", "") : username;
 
-    /*fetch(`${TWITTER_BASE_URL}${username}`)
+  fetch(`${TWITTER_BASE_URL}${username}`)
     .then(data => data.json())
     .then(res => {
       followersCount = Number(res[0].followers_count);
@@ -222,7 +222,7 @@ getTwitterFollowers = () => {
 }
 
 
-var followersArray = [];
+/*var followersArray = [];
 
 init = () => {
   removeUserError();
