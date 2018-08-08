@@ -174,12 +174,12 @@ document.getElementById("social_twitter").addEventListener("click", () => {
   social_network = "twitter";
   toggleSocial("twitter")
 });
-/*document.getElementById("social_codepen").addEventListener("click", () => {
+document.getElementById("social_codepen").addEventListener("click", () => {
   social_network = "codepen";
   toggleSocial("codepen")
 });
 
-checkMaxFollowers = (value) => {
+/*checkMaxFollowers = (value) => {
   if (value > MAX_FOLLOWERS) {
     followersCount = MAX_FOLLOWERS;
     document.getElementById("followers_count").innerText = value;
